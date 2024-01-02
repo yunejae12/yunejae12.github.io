@@ -7,10 +7,8 @@
   "bugs": "https://github.com/just-the-docs/just-the-docs/issues",
   "devDependencies": {
     "prettier": "^3.0.3",
-    "stylelint": "^14.16.1",
-    "stylelint-config-prettier-scss": "0.0.1",
-    "stylelint-config-standard-scss": "^6.1.0",
-    "stylelint-prettier": "^5.0.0"
+    "stylelint": "^15.10.3",
+    "stylelint-prettier": "^10.0.0"
   },
   "scripts": {
     "test": "stylelint '**/*.scss'",
