@@ -23,6 +23,10 @@ jobs:
       with:
         ruby-version: '3.1' # Not needed with a .ruby-version file
         bundler-cache: false
+    - name: sass Install
+      run: gem install sass
+    - name: sass Embedded Install
+      run: gem install sass-embedded --force
     - name: Bundle Install
       run: bundle install
     - name: Install Jekyll ${{ matrix.jekyll-version }}
