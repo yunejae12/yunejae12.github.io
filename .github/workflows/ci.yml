@@ -27,8 +27,6 @@ jobs:
       run: bundle install
     - name: force install sass-embedded
       run: gem install sass-embedded --force
-    - name: prettier-eslint 5.0
-      run: gem install eslint-plugin-prettier@5.0.0
     - name: Install Jekyll ${{ matrix.jekyll-version }}
       run: gem install jekyll -v ${{ matrix.jekyll-version }}
     - name: Init Search
@@ -51,4 +49,5 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm install
+    - run: npm install eslint-plugin-prettier@5.0.0
     - run: npm test
